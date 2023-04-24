@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lootoo
+    </title>
+</head>
+<body>
+    <div class="set">
+            <h3 style="color:brown">Lotto board</h3><br>
+            <p>Try your luck and make some cash</p>
+            <p>Guess my number correctly and you will be some points richer.</p> <hr>   
+            
+    </div>
+    <p id="show"> </p> 
+
+    <div class="setup">
+        
+          <button type="button" onclick="lotto()">1</button>
+           <button type="button" onclick="lotto()">4</button>
+          <button type="button" onclick="lotto()">9</button>  
+          <button type="button" onclick="lotto()">0</button>
+          <button type="button" onclick="lotto()">7</button>
+          <button type="button" onclick="lotto()">2</button>
+          <button type="button" onclick="lotto()">3</button>
+          <button type="button" onclick="lotto()">5</button>
+          <button type="button" onclick="lotto()">6</button>
+          <button type="button" onclick="lotto()">8</button>
+    </div>
+   
+    <!-- <input oninput="number" type="" id="luck">
+    <button onclick="lotto()">Baba-Ijebu</button> -->
+    
+
+    
+
+
+
+    <script>
+    let num=Math.floor(Math.random()*10)
+    //document.getElementById('luck').innerHTML=num;
+     let value=(2,7,4)
+     
+    console.log(num)
+        
+    console.log(num==9)
+
+
+    function lotto(){
+    
+         if(num==2){
+             document.getElementById('show').innerHTML='Congratulations-10points'
+        }
+        else if(num==7){
+             document.getElementById('show').innerHTML='Congratulations-2points'
+        }  
+        else if(num==4){
+              document.getElementById('show').innerHTML='Congratulations-5points'
+          }
+        else if(num!==1){
+             document.getElementById('show').innerHTML='Try-again'
+        }
+     
+        else if(num!==0){
+             document.getElementById('show').innerHTML='Lost'
+        }
+        else if(num!==3){
+             document.getElementById('show').innerHTML='Keep-faith'
+        }
+        else if(num!==5){
+             document.getElementById('show').innerHTML='Loose'
+        }
+        else if(num!==9){
+             document.getElementById('show').innerHTML='Keep-faith'
+        }
+        else if(num!==8){
+             document.getElementById('show').innerHTML='Try-again'
+        }
+        else if(num!==6){
+             document.getElementById('show').innerHTML='Keep-trying'
+        }
+     //    else if(num!==7){
+     //         document.getElementById('show').innerHTML='Loose'
+     //    }
+
+           
+          else{
+              document.getElementById('show').innerHTML='Invalid'
+          }
+        
+    }
+
+    </script>
+    
+</body>
+</html>
